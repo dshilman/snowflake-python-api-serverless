@@ -1,6 +1,6 @@
 # A Simple API Powered by Snowflake
 
-Disclaimer!!!
+## Disclaimer!!!
 
 Complete [tutorial](https://quickstarts.snowflake.com/guide/build_a_custom_api_in_python_on_aws/index.html) is available on [GETTING STARTED WITH SNOWFLAKE](https://quickstarts.snowflake.com/)
 
