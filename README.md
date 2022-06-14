@@ -1,5 +1,10 @@
 # A Simple API Powered by Snowflake
 
+Disclaimer!!!
+Complete [tutorial](https://quickstarts.snowflake.com/guide/build_a_custom_api_in_python_on_aws/index.html) is available on [GETTING STARTED WITH SNOWFLAKE](https://quickstarts.snowflake.com/)
+
+Why do I publish it here? The source code downloaded from the [tutorial github](https://github.com/Snowflake-Labs/sfguide-snowflake-python-api) has a few bugs primarily in serverless.yml that I fixed here
+
 Technologies used: [Snowflake](https://snowflake.com/), [Python](https://www.python.org/), [Flask](https://palletsprojects.com/p/flask/), [AWS API Gateway](https://aws.amazon.com/api-gateway/), [AWS Lambda](https://aws.amazon.com/lambda/), [Serverless Framework](https://www.serverless.com/)
 
 Requirements: 
@@ -13,7 +18,7 @@ This project demonstrates how to build and deploy a custom API powered by Snowfl
 ## Configuration
 
 Copy the serverless-template.yml to serverless.yml and modify the parameters according to your Snowflake configuration. Put your private key
-to your Snowflake user in AWS SSM is us-west-2 region under the parameter <ACCOUNT>.DATA_APPS_DEMO.
+to your Snowflake user in AWS SSM is us-east-1 region under the parameter <ACCOUNT>.DATA_APPS_DEMO.
 
 Install serverless and other required node packages and configure serverless (sls) for the project.
 
