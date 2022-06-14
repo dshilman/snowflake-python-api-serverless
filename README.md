@@ -1,12 +1,12 @@
 # A Simple API Powered by Snowflake
 
-### Disclaimer!!!
+### Disclaimer!!!-------------------------------------------------
 
 Complete [tutorial](https://quickstarts.snowflake.com/guide/build_a_custom_api_in_python_on_aws/index.html) is available on [GETTING STARTED WITH SNOWFLAKE](https://quickstarts.snowflake.com/)
 
 Why do I publish it here? The source code downloaded from the [tutorial github](https://github.com/Snowflake-Labs/sfguide-snowflake-python-api) has a few bugs primarily in serverless.yml that I fixed here
 
-### Disclaimer end!!!
+### Disclaimer end!!!---------------------------------------------
 
 
 Technologies used: [Snowflake](https://snowflake.com/), [Python](https://www.python.org/), [Flask](https://palletsprojects.com/p/flask/), [AWS API Gateway](https://aws.amazon.com/api-gateway/), [AWS Lambda](https://aws.amazon.com/lambda/), [Serverless Framework](https://www.serverless.com/)
