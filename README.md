@@ -1,6 +1,7 @@
 # A Simple API Powered by Snowflake
 
 Disclaimer!!!
+
 Complete [tutorial](https://quickstarts.snowflake.com/guide/build_a_custom_api_in_python_on_aws/index.html) is available on [GETTING STARTED WITH SNOWFLAKE](https://quickstarts.snowflake.com/)
 
 Why do I publish it here? The source code downloaded from the [tutorial github](https://github.com/Snowflake-Labs/sfguide-snowflake-python-api) has a few bugs primarily in serverless.yml that I fixed here
