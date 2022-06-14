@@ -1,6 +1,7 @@
-serverless.yml
+package-lock.json
 node_modules
-venv
+.venv
+.ssh
 .serverless
 __pycache__
 .DS_Store

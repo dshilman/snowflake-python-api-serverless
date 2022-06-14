@@ -1,30 +1,27 @@
-service: <NAME_OF_YOUR_SERVICE>
-
-frameworkVersion: '2'
+org: dshilman
+app: snowflake-python-api
+service: 'snowflake-python-api'
 
 custom:
   wsgi:
     app: app.app
     packRequirements: false
-  pythonRequirements:
-    dockerizePip: non-linux
-
+  
 provider:
   name: aws
-  runtime: python3.8
-  lambdaHashingVersion: '20201221'
-  region: us-west-2
+  runtime: python3.9
+  region: us-east-1
 
 functions:
   api:
     handler: wsgi_handler.handler
     environment:
-      SNOWFLAKE_ACCOUNT: '<ACCOUNT>'
+      SNOWFLAKE_ACCOUNT: 'iob03793.us-east-1'
       SNOWFLAKE_USER: 'DATA_APPS_DEMO'
       SNOWFLAKE_DATABASE: 'DATA_APPS_DEMO'
       SNOWFLAKE_SCHEMA: 'DEMO'
       SNOWFLAKE_WAREHOUSE: 'DATA_APPS_DEMO'
-      SNOWFLAKE_PRIVATE_KEY: ${ssm:/<ACCOUNT>.DATA_APPS_DEMO}
+      SNOWFLAKE_PRIVATE_KEY: ${ssm:/597782288487.DATA_APPS_DEMO}
     timeout: 15
     events:
       - http:
@@ -54,5 +51,5 @@ package:
   patterns:
     - '!__pycache__/**'
     - '!_node_modules/**'
-    - '!venv/**'
+    - '!.venv/**'
 
